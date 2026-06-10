@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Louisa Frauenheim</title>
+  <style>
+
+    @font-face {
+      font-family: 'Montserrat';
+      src: url('montserrat-300.woff2') format('woff2');
+      font-weight: 300;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Montserrat';
+      src: url('montserrat-400.woff2') format('woff2');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #fff;
+      color: #111;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    a:hover {
+      opacity: 0.6;
+    }
+
+    /* ── Video Hintergrund ── */
+    .video-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      overflow: hidden;
+    }
+
+    .video-bg video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* ── Header ── */
+    header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      padding: 32px 48px 0;
+    }
+
+    .name {
+      font-size: 77px;
+      font-weight: 700;
+      letter-spacing: -2px;
+      line-height: 1;
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: baseline;
+    }
+
+    .nav-right a {
+      font-size: 29px;
+      font-weight: 300;
+      letter-spacing: 0.02em;
+    }
+
+    .nav-divider {
+      font-size: 29px;
+      font-weight: 300;
+      padding: 0 10px;
+    }
+
+    /* ── Footer ── */
+    footer {
+      position: fixed;
+      bottom: 32px;
+      right: 48px;
+    }
+
+    .nav-imprint {
+      font-size: 22px;
+      font-weight: 300;
+      letter-spacing: 0.02em;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="video-bg">
+    <video autoplay muted loop playsinline>
+      <source src="video/hintergrund.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <header>
+    <a class="name" href="index.html">Louisa<br>Frauenheim</a>
+    <div class="nav-right">
+      <a href="portfolio.html">Portfolio</a>
+      <span class="nav-divider"> | </span>
+      <a href="kontakt.html">Kontakt</a>
+    </div>
+  </header>
+
+  <footer>
+    <a class="nav-imprint" style="margin-right:28px;" href="datenschutz.html">Datenschutz</a>
+    <a class="nav-imprint" href="impressum.html">Impressum</a>
+  </footer>
+
+</body>
+</html>
